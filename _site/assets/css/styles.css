@@ -6,6 +6,8 @@ body { scroll-behavior: smooth; }
 
 .text { margin: 10rem auto 3rem auto; border: 1px solid #ececec; background-color: #fefefe; padding: 16px; max-width: 900px; }
 
+#EETabelle li { text-align: left; }
+
 nav { font-family: Arial, Helvetica, sans-serif; background-color: yellow; position: fixed; top: 0; width: 100%; left: 0; border-bottom: 1px solid #afafaf; z-index: 10; }
 
 nav h1 { margin: 20px; max-width: 80%; }
@@ -347,5 +349,3 @@ h4 { padding-top: 14pt; color: #666666; font-size: 12pt; padding-bottom: 4pt; fo
 h5 { padding-top: 12pt; color: #666666; font-size: 11pt; padding-bottom: 4pt; font-family: "Arial"; line-height: 1.15; page-break-after: avoid; orphans: 2; widows: 2; text-align: left; }
 
 h6 { padding-top: 12pt; color: #666666; font-size: 11pt; padding-bottom: 4pt; font-family: "Arial"; line-height: 1.15; page-break-after: avoid; font-style: italic; orphans: 2; widows: 2; text-align: left; }
-
-/*# sourceMappingURL=styles.css.map */
