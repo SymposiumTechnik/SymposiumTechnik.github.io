@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Energie der Zukunft</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+
+  </head>
+  <body>
+    <nav>
+    <h1>Energieinfrastruktur der Zukunft</h1> 
+    <div id="menu-btn" class="menu-btn"><div class="menu-btn__burger"></div></div>
+    
+    <ul id="NavLinks" style="list-style: none; display: none;">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="TechnikSymposiumText.html">Strom von Morgen</a></li>
+    </ul>
+</nav>
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const NavLinks = document.getElementById('NavLinks');
+    let menuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+      if(!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+        document.getElementById("NavLinks").style.display = "block"
+      } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+        document.getElementById("NavLinks").style.display = "none"
+      }
+    });
+</script>
+    
+  </body>
+</html>

@@ -1,0 +1,48 @@
+.menu-btn {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 100%;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+    top: 0;
+    right: 0;
+}
+.menu-btn__burger {
+	width: 34px;
+	height: 4px;
+	background: black;
+	border-radius: 2px;
+	transition: all .5s ease-in-out;
+	position: absolute;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+	content: '';
+	position: absolute;
+	width: 34px;
+	height: 4px;
+	background: black;
+	border-radius: 2px;
+	transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+	transform: translateY(-12px);
+}
+.menu-btn__burger::after {
+	transform: translateY(12px);
+}
+
+.menu-btn.open .menu-btn__burger {
+	transform: translateX(-50px);
+	background: transparent;
+	box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+	transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+	transform: rotate(-45deg) translate(35px, 35px);
+}
