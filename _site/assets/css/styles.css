@@ -6,17 +6,19 @@ body { scroll-behavior: smooth; }
 
 .text { margin: 10rem auto 3rem auto; border: 1px solid #ececec; background-color: #fefefe; padding: 16px; max-width: 900px; }
 
-#EETabelle li { text-align: left; }
+#EETabelle li { text-align: left !important; }
+
+#EETabelle p { text-align: left !important; }
 
 nav { font-family: Arial, Helvetica, sans-serif; background-color: yellow; position: fixed; top: 0; width: 100%; left: 0; border-bottom: 1px solid #afafaf; z-index: 10; }
 
 nav h1 { margin: 20px; max-width: 80%; }
 
-ul li a { color: black; font-size: 26px; }
+nav ul li a { color: black; font-size: 26px; }
 
-ul li { padding: 8px; text-align: right; }
+nav ul li { padding: 8px; text-align: right; }
 
-ul { float: right; margin-right: 80px; }
+nav ul { float: right; margin-right: 80px; }
 
 .menu-btn { position: absolute; display: flex; justify-content: center; align-items: center; width: 80px; height: 100%; cursor: pointer; transition: all .5s ease-in-out; top: 0; right: 0; }
 
