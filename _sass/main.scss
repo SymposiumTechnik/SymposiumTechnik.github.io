@@ -2,11 +2,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/*
-#texts {
-    margin-top: 10rem;
-}
-*/
 #texts p {
     font-family: 'Roboto Mono', monospace;
 }
@@ -17,6 +12,7 @@ body {
     background-color: rgb(254, 254, 254);
     padding: 16px;
     max-width: 900px;
+    min-height: 40rem;
 }
 
 #EETabelle li{
