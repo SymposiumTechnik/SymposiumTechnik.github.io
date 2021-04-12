@@ -1,9 +1,9 @@
 @import url("https://themes.googleusercontent.com/fonts/css?kit=Ue6CM0OpaygzRNv29j0Leg");
-body { scroll-behavior: smooth; }
+body { scroll-behavior: smooth; margin: 0; }
 
 #texts p { font-family: 'Roboto Mono', monospace; }
 
-.text { margin: 10rem auto 3rem auto; border: 1px solid #ececec; background-color: #fefefe; padding: 16px; max-width: 900px; min-height: 40rem; }
+.text { margin: auto; border: 1px solid #ececec; background-color: #fefefe; padding: 16px; max-width: 900px; min-height: 40rem; }
 
 #EETabelle li { text-align: left !important; }
 
