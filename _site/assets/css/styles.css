@@ -3,7 +3,7 @@ body { scroll-behavior: smooth; margin: 0; }
 
 #texts p { font-family: 'Roboto Mono', monospace; }
 
-.text { margin: auto; border: 1px solid #ececec; background-color: #fefefe; padding: 16px; max-width: 900px; min-height: 40rem; }
+.text { margin: 8rem auto 4rem auto; border: 1px solid #ececec; background-color: #fefefe; padding: 16px; max-width: 900px; min-height: 40rem; }
 
 #EETabelle li { text-align: left !important; }
 
