@@ -1,19 +1,41 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../assets/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Mono Italic';
+    src: url('../assets/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Benne';
+    src: url('../assets/Benne/Benne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     scroll-behavior: smooth;
     margin: 0;
 }
 
-#texts p {
-    font-family: 'Roboto Mono', monospace;
-}
-
 .text {
-    margin: 8rem auto 4rem auto;
-    border: 1px solid rgb(236, 236, 236);
-    background-color: rgb(254, 254, 254);
+    margin: 32px 4px 32px 4px;
+    border-radius: 8px;
+    border: 1px solid #e9e9e9;
+    background-color: #fbf9f7;
     padding: 16px;
     max-width: 900px;
     min-height: 40rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
 }
 
 #EETabelle li{

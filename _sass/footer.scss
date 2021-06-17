@@ -1,14 +1,18 @@
 footer {
-    margin: 0 0 0 0;
-    left: 0;
-    padding: 16px;
-    border-top: solid 2px rgb(151, 151, 151);
+    background-color: #25292e;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 60px 20px 60px;
+    border: #34393f 16px solid;
+    border-right: none;
+    border-left: none;
 }
 
 footer p {
-    color: rgb(204, 204, 204);
+    color: rgb(156, 156, 156);
+    margin: 10px 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-footer p a {
+footer a {
     color: rgb(0, 255, 255)
 }

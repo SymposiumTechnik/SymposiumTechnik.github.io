@@ -11,16 +11,20 @@
 
   </head>
   <body style="overflow-x: hidden;">
-    <nav>
-  <h1>Energieinfrastruktur der Zukunft</h1> 
+    <nav id="nav">
+  <h1>Energieinfrastruktur der Zukunft</h1>
+
   <div id="menu-btn" class="menu-btn"><div class="menu-btn__burger"></div></div>
   
-  <ul id="NavLinks" style="list-style: none; display: none;">
-      <li><a href="index.html">Startseite</a></li>
-      <li><a href="TechnikSymposiumText.html">Strom von Morgen</a></li>
-      <li><a href="Team.html">Über uns</a></li>
-      <li><a href="quellen.html">Quellen</a></li>
-  </ul>
+  <div class="NavLinksClosed" id="NavLinks">
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="TechnikSymposiumText.html">Strom von Morgen</a></li>
+        <li><a href="Team.html">Über uns</a></li>
+        <li><a href="quellen.html">Quellen</a></li>
+    </ul>
+  </div>
+
 </nav>
 
 <script>
@@ -30,47 +34,30 @@
 
     menuBtn.addEventListener('click', () => {
       if(!menuOpen) {
-        menuBtn.classList.add('open');
-        menuOpen = true;
-        document.getElementById("NavLinks").style.display = "block"
+        menuBtn.classList.add('open')
+        menuOpen = true
+        document.getElementById("NavLinks").classList.remove("NavLinksClosed")
       } else {
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-        document.getElementById("NavLinks").style.display = "none"
+        menuBtn.classList.remove('open')
+        menuOpen = false
+        document.getElementById("NavLinks").classList.add("NavLinksClosed")
       }
-    });
+    })
 </script>
-    <div class="text">
+    <main>
+      <div class="text">
     <h2>Das Team</h2>
-<h3>Präsentation</h3>
-<p>Annika Meiners - Strombedarf<br>David Kornherr - Stromspeicherung<br>Max Sebode - Wärmepumpen<br>Luca Theisen - Stromerzeugung und Transport</p>
-<h3></h3>
-<p>Annika Meiners<br>Cedric Weidner<br>Christian Müller<br>David Kornherr<br>Georgii Martazov<br>Julius Rauschen<br>Kenji Leonhards<br>Luca Theisen<br>Lucy Schmid<br>Luisa Kois</p>
-<h3>Programmieren</h3>
-<p>Aleksi Braun<br>Jonathan Schnieders</p>
-
+    <h3>Präsentation</h3>
+    <p>Annika Meiners - Strombedarf<br>David Kornherr - Stromspeicherung<br>Max Sebode - Wärmepumpen<br>Luca Theisen - Stromerzeugung und Transport</p>
+    <h3></h3>
+    <p>Annika Meiners<br>Cedric Weidner<br>Christian Müller<br>David Kornherr<br>Georgii Martazov<br>Julius Rauschen<br>Kenji Leonhards<br>Luca Theisen<br>Lucy Schmid<br>Luisa Kois</p>
+    <h3>Programmieren</h3>
+    <p>Aleksi Braun<br>Jonathan Schnieders</p>
 </div>
-    <style>
-    footer {
-        margin: 0 0 0 0;
-        left: 0;
-        padding: 16px;
-        padding-top: 32px;
-        border-top: solid 2px rgb(151, 151, 151);
-    }
-
-    footer p {
-        color: rgb(204, 204, 204);
-    }
-
-    footer p a {
-        color: rgb(0, 255, 255)
-    }
-</style>
-
-<footer style="position: absolute; width: 100%; height: 5rem; background-color: rgb(36, 43, 75);">
+      <footer>
     <p>Diese Webseite ist im Ramhen des Vortrages des Technikworkshops des 11. Schülersymposiums des Science College Overbach entstanden. Zur Webseite des Schülersymposiums geht es <a href="http://sciencecollege.de/schuelersymposien/" target="_blank">hier</a>.</p>
     <p>© Teilnehmer des Technikworkshops des 11. Schülersymposiums des Science College Overbach, 2021, All reights reserved</p>
 </footer>
+    </main>
   </body>
 </html>
